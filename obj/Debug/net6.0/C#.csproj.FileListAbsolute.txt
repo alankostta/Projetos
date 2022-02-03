@@ -1,0 +1,15 @@
+/home/alan/Documentos/C#/bin/Debug/net6.0/C#
+/home/alan/Documentos/C#/bin/Debug/net6.0/C#.deps.json
+/home/alan/Documentos/C#/bin/Debug/net6.0/C#.runtimeconfig.json
+/home/alan/Documentos/C#/bin/Debug/net6.0/C#.dll
+/home/alan/Documentos/C#/bin/Debug/net6.0/ref/C#.dll
+/home/alan/Documentos/C#/bin/Debug/net6.0/C#.pdb
+/home/alan/Documentos/C#/obj/Debug/net6.0/C#.csproj.AssemblyReference.cache
+/home/alan/Documentos/C#/obj/Debug/net6.0/C#.GeneratedMSBuildEditorConfig.editorconfig
+/home/alan/Documentos/C#/obj/Debug/net6.0/C#.AssemblyInfoInputs.cache
+/home/alan/Documentos/C#/obj/Debug/net6.0/C#.AssemblyInfo.cs
+/home/alan/Documentos/C#/obj/Debug/net6.0/C#.csproj.CoreCompileInputs.cache
+/home/alan/Documentos/C#/obj/Debug/net6.0/C#.dll
+/home/alan/Documentos/C#/obj/Debug/net6.0/ref/C#.dll
+/home/alan/Documentos/C#/obj/Debug/net6.0/C#.pdb
+/home/alan/Documentos/C#/obj/Debug/net6.0/C#.genruntimeconfig.cache
