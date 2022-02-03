@@ -11,7 +11,7 @@ namespace Programa
         {
             this.Dica = "";
         }
-         public NovaPergunta(string pergunta, string resposta, string dica) : base(pergunta, resposta)
+        public NovaPergunta(string pergunta, string resposta, string dica) : base(pergunta, resposta)
         {
             this.Dica = dica;
         }
@@ -26,6 +26,6 @@ namespace Programa
             {
                 dica = value.ToUpper();
             }
-        } 
+        }
     }
 }
