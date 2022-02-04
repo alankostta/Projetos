@@ -19,19 +19,39 @@ namespace Programa
         }
         public void InformarValores()
         {
+            Boolean execute = true;
             Calculadora calcular = new Calculadora();
 
-            Console.WriteLine("Informe o operador Matemático");
-            calcular.Operador = char.Parse(Console.ReadLine());
+            while (execute)
+            {
+                Console.WriteLine("***************");
+                Console.WriteLine("**CALCULADORA**");
+                Console.WriteLine("***************");
 
-            Console.WriteLine("Informe o primeiro número: ");
-            calcular.Num1 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("ESCOLHA UM OPERADOR DA LISTA:");
+                Console.WriteLine("\tSOMA [+]");
+                Console.WriteLine("\tSUBITRAÇÃO [-]");
+                Console.WriteLine("\tMULTIPLICAÇÃO [*]");
+                Console.WriteLine("\tDIVISÃO [/]");
 
-            Console.WriteLine("Informe o segundo número: ");
-            calcular.Num2 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Informe o operador Matemático");
+                calcular.Operador = char.Parse(Console.ReadLine());
 
-            double result = calcularValores(calcular.Operador, calcular.Num1, calcular.Num2);
-            Console.WriteLine("Resultado: "+result);
+                Console.WriteLine("Informe o primeiro número: ");
+                calcular.Num1 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Informe o segundo número: ");
+                calcular.Num2 = Convert.ToDouble(Console.ReadLine());
+
+                double result = calcularValores(calcular.Operador, calcular.Num1, calcular.Num2);
+                Console.WriteLine("Resultado: " + result);
+
+                Console.Write("Pressione 'f' Fechar o sistema, ou pressione Enter para continuar: ");
+                if (Console.ReadLine() == "f")
+                {
+                    execute = false;
+                }
+            }
         }
         public double calcularValores(char op, double num1, double num2)
         {
@@ -59,16 +79,14 @@ namespace Programa
                             resultado = num1 / num2;
                             break;
                     }
+                    return resultado;
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Não existe divisão por zero!"+ ex.Message);
+                    Console.WriteLine("Não existe divisão por zero!" + ex.Message);
                 }
-                
-                return resultado;
             }
-          
-           return resultado; 
+            return 0;
         }
     }
 }
