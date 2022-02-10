@@ -9,24 +9,30 @@ namespace Programa
     {
         public void determinante()
         {
-            string[,] matriz = new string[2, 2];
-            double[,] mat = new double[2, 2];
-            double determinante = 0;
 
-            for (int i = 0; i < matriz.Length; i++)
+            
+            double[,] matriz = new double[2, 2]{0.0, };
+            double determinante = 0.0;
+
+
+            for (int i = 0; i < 2; i++)
             {
-                for (int j = 0; j < matriz.Length; j++)
+                for (int j = 0; j < 2; j++)
                 {
-                    Console.Write("Informe os valores decimais para calcular o determinante: ");
-                    mat[i, j] = Console.Read();
-                    double.TryParse(matriz[i, j], out mat[i, j]);
+                    Console.Write("Informe os valores décimais para cálcular o determinante: ");
+                    
+                    matriz[i, j] = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Determinante ", matriz[i,j]);
                 }
+
             }
-            for (int i = 0; i < matriz.Length; i++)
+            for (int i = 0; i < 2; i++)
             {
-                for (int j = 0; j < matriz.Length; j++)
+                for (int j = 0; j < 2; j++)
                 {
-                    determinante = ((mat[0, 0] * mat[1, 1]) - (mat[0, 1] * mat[1, 0]));
+                    Console.WriteLine("Determinante", matriz[i, j]);
+                    determinante = ((matriz[0, 0] * matriz[1, 1]) - (matriz[0, 1] * matriz[1, 0]));
                 }
             }
             Console.WriteLine("O resultado do cálculo do determinante é: ", determinante);

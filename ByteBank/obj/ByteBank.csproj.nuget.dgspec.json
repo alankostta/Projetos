@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/alan/Documentos/C#/C#.csproj": {}
+    "/home/alan/Documentos/C#/ByteBank/ByteBank.csproj": {}
   },
   "projects": {
-    "/home/alan/Documentos/C#/C#.csproj": {
+    "/home/alan/Documentos/C#/ByteBank/ByteBank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/alan/Documentos/C#/C#.csproj",
-        "projectName": "C#",
-        "projectPath": "/home/alan/Documentos/C#/C#.csproj",
+        "projectUniqueName": "/home/alan/Documentos/C#/ByteBank/ByteBank.csproj",
+        "projectName": "ByteBank",
+        "projectPath": "/home/alan/Documentos/C#/ByteBank/ByteBank.csproj",
         "packagesPath": "/home/alan/.nuget/packages/",
-        "outputPath": "/home/alan/Documentos/C#/obj/",
+        "outputPath": "/home/alan/Documentos/C#/ByteBank/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/alan/.nuget/NuGet/NuGet.Config"
