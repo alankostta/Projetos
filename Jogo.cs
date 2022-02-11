@@ -4,7 +4,7 @@ namespace CRUD
     public enum TipoConsole { PS4, PS5, Switch, Xbox_360, Xbox_One, PC, Outro }
     public class Jogo
     {
-        private int id;
+        private int id = 0;
         private string nome;
         private string descricao;
         public TipoConsole Console { get; set; }

@@ -30,7 +30,7 @@ namespace CRUD
                     resultado = false;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 resultado = false;
             }
