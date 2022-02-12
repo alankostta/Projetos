@@ -5,12 +5,14 @@ namespace Programa
 {
     class ProgramaUm
     {
-        enum Opcoes { Jogo = 1, Calculadora = 2, Determinante = 3, Listar = 4, Atualizar = 5, Salvar = 6, Sair = 7 }
+        enum Opcoes { Jogo = 1, Calculadora = 2, Determinante = 3, Comissao = 4, Atualizar = 5, Salvar = 6, Sair = 7 }
         static void Main(String[] args)
         {
 
             Console.WriteLine("Selecione uma opção do Menu!");
-            Console.WriteLine("1-Jogo Adivinha\n2-Calculadora\n3-Determinate\n4-Listar\n5-Atualizar\n6-Salvar");
+            Console.WriteLine("================================================================================");
+            Console.WriteLine("1-Jogo Adivinha| 2-Calculadora| 3-Determinate| 4-Comissão| 5-Atualizar| 6-Salvar");
+            Console.WriteLine("================================================================================");
 
             int index = Convert.ToInt32(Console.ReadLine());
             Opcoes opcaoSelect = (Opcoes)index;
@@ -32,8 +34,9 @@ namespace Programa
                     exerc.determinante();
                     break;
 
-                case Opcoes.Listar:
-                    Console.WriteLine("O intem selecionado do menu foi: " + opcaoSelect);
+                case Opcoes.Comissao:
+                    Comissao comissao = new Comissao();
+                    comissao.CalcularPorcentagem();
                     break;
 
                 case Opcoes.Atualizar:

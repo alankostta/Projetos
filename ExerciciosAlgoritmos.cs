@@ -9,9 +9,7 @@ namespace Programa
     {
         public void determinante()
         {
-
-            
-            double[,] matriz = new double[2, 2]{0.0, };
+            double[,] matriz = new double[2,2];
             double determinante = 0.0;
 
 
@@ -21,11 +19,11 @@ namespace Programa
                 {
                     Console.Write("Informe os valores décimais para cálcular o determinante: ");
                     
-                    matriz[i, j] = double.Parse(Console.ReadLine());
+                    var aux = (Console.ReadLine());
+                    matriz[i, j] = double.Parse(aux);
 
                     Console.WriteLine("Determinante ", matriz[i,j]);
                 }
-
             }
             for (int i = 0; i < 2; i++)
             {
@@ -35,7 +33,7 @@ namespace Programa
                     determinante = ((matriz[0, 0] * matriz[1, 1]) - (matriz[0, 1] * matriz[1, 0]));
                 }
             }
-            Console.WriteLine("O resultado do cálculo do determinante é: ", determinante);
+            Console.WriteLine("O resultado do cálculo do determinante é{0,C2}: ", determinante);
         }
     }
 }
