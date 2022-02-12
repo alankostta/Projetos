@@ -4,31 +4,31 @@ namespace Programa
     {
         public void CalcularPorcentagem()
         {
-            double comissao = 10;
-            double comissaoPromocao = 5;
+            double comissao = 10.0;
+            double comissaoPromocao = 5.0;
 
             Console.Write("Digite a quantidade vendida: ");
-            var quantidade = Console.ReadLine();
+            double quantidade = double.Parse(Console.ReadLine());
 
             Console.Write("Digite o preço unitário: ");
-            var unitario = Console.ReadLine();
-
+            double unitario = double.Parse(Console.ReadLine());
+            
             Console.Write("Tipo de venda? (Escolha [1]-Normal-(10%) | [2]-Promoção-(5%) | [3]-Mostruario): ");
             var tipo = Console.ReadLine();
 
-            var total = Convert.ToDouble(quantidade) * Convert.ToDouble(unitario);
+            double total = quantidade * unitario;
 
-            Console.WriteLine("\nO valor do intem é: ",total);
+            Console.WriteLine($"\nO valor do intem é: {total}");
 
             if (tipo == "1")
             {
-                var valorComissao = total * comissao / 100;
-                Console.WriteLine("\nO Valor da comissão é: ", valorComissao);
+                double valorComissao = total * comissao / 100;
+                Console.WriteLine($"O Valor da comissão é: {valorComissao}");
             }
             else if(tipo == "2")
             {
-                var valorComissao = total * comissaoPromocao / 100;
-                Console.WriteLine("\nO Valor da Comissão de produto em promoção é: ", valorComissao);
+                double valorComissao = total * comissaoPromocao / 100;
+                Console.WriteLine($"O Valor da Comissão de produto em promoção é: {valorComissao}");
             }
             else
             {

@@ -58,6 +58,7 @@ namespace Programa
                 Console.WriteLine("            OOOOOO   OOOOOOOOO   OOOOOO               \n");
                 Console.WriteLine("               OOOOO           OOOOOO                  \n");
                 Console.WriteLine("                    OOOOOOOOOOOO                      \n");
+                Console.ReadKey();
             }
             else
             {
@@ -85,7 +86,6 @@ namespace Programa
             lista.Add(new NovaPergunta("De quem é essa frase? I am back", "Arnold Schwarzenegger", "Tora"));
             lista.Add(new NovaPergunta("Cores do capacete tricampeão da F1 brasileiro", "Senna", "manhas de domingo"));
             return lista;
-
         }
     }
 }

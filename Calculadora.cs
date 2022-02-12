@@ -19,11 +19,9 @@ namespace Programa
         }
         public void InformarValores()
         {
-            Boolean execute = true;
+        
             Calculadora calcular = new Calculadora();
-
-            while (execute)
-            {
+            
                 Console.WriteLine("***************");
                 Console.WriteLine("**CALCULADORA**");
                 Console.WriteLine("***************");
@@ -46,12 +44,7 @@ namespace Programa
                 double result = calcularValores(calcular.Operador, calcular.Num1, calcular.Num2);
                 Console.WriteLine("Resultado: " + result);
 
-                Console.Write("Pressione 'f' Fechar o sistema, ou pressione Enter para continuar: ");
-                if (Console.ReadLine() == "f")
-                {
-                    execute = false;
-                }
-            }
+            
         }
         public double calcularValores(char op, double num1, double num2)
         {
