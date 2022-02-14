@@ -16,40 +16,40 @@ namespace Programa
             int index = Convert.ToInt32(Console.ReadLine());
             Opcoes opcaoSelect = (Opcoes)index;
 
-           
-                switch (opcaoSelect)
-                {
-                    case Opcoes.Jogo:
-                        ListaDePerguntas jogo = new ListaDePerguntas();
-                        jogo.IniciaAdivinha();
-                        break;
 
-                    case Opcoes.Calculadora:
-                        Calculadora calcula = new Calculadora();
-                        calcula.InformarValores();
-                        break;
+            switch (opcaoSelect)
+            {
+                case Opcoes.Jogo:
+                    ListaDePerguntas jogo = new ListaDePerguntas();
+                    jogo.IniciaAdivinha();
+                    break;
 
-                    case Opcoes.Determinante:
-                        ExerciciosAlgoritmo exerc = new ExerciciosAlgoritmo();
-                        exerc.determinante();
-                        break;
+                case Opcoes.Calculadora:
+                    Calculadora calcula = new Calculadora();
+                    calcula.InformarValores();
+                    break;
 
-                    case Opcoes.Comissao:
-                        Comissao comissao = new Comissao();
-                        comissao.CalcularPorcentagem();
-                        break;
+                case Opcoes.Determinante:
+                    ExerciciosAlgoritmo exerc = new ExerciciosAlgoritmo();
+                    exerc.determinante();
+                    break;
 
-                    case Opcoes.Atualizar:
-                        Console.WriteLine("O intem selecionado do menu foi: " + opcaoSelect);
-                        break;
+                case Opcoes.Comissao:
+                    Comissao comissao = new Comissao();
+                    comissao.CalcularPorcentagem();
+                    break;
 
-                    case Opcoes.Sair:
-                        break;
+                case Opcoes.Atualizar:
+                    Console.WriteLine("O intem selecionado do menu foi: " + opcaoSelect);
+                    break;
 
-                    default:
-                        Console.WriteLine("O intem selecionado não contém na lista de opções!");
-                        break;
-                
+                case Opcoes.Sair:
+                    break;
+
+                default:
+                    Console.WriteLine("O intem selecionado não contém na lista de opções!");
+                    break;
+
             }
             Console.Clear();
             Console.WriteLine("Pressione enter para sair do sistema");
