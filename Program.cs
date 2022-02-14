@@ -1,6 +1,5 @@
 using System.IO;
 
-
 namespace Programa
 {
     class ProgramaUm
@@ -17,8 +16,7 @@ namespace Programa
             int index = Convert.ToInt32(Console.ReadLine());
             Opcoes opcaoSelect = (Opcoes)index;
 
-            while (opcaoSelect != Opcoes.Sair)
-            {
+           
                 switch (opcaoSelect)
                 {
                     case Opcoes.Jogo:
@@ -51,7 +49,7 @@ namespace Programa
                     default:
                         Console.WriteLine("O intem selecionado não contém na lista de opções!");
                         break;
-                }
+                
             }
             Console.Clear();
             Console.WriteLine("Pressione enter para sair do sistema");

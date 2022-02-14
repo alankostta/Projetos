@@ -19,32 +19,39 @@ namespace Programa
         }
         public void InformarValores()
         {
-        
+
             Calculadora calcular = new Calculadora();
-            
-                Console.WriteLine("***************");
-                Console.WriteLine("**CALCULADORA**");
-                Console.WriteLine("***************");
 
-                Console.WriteLine("ESCOLHA UM OPERADOR DA LISTA:");
-                Console.WriteLine("\tSOMA [+]");
-                Console.WriteLine("\tSUBITRAÇÃO [-]");
-                Console.WriteLine("\tMULTIPLICAÇÃO [*]");
-                Console.WriteLine("\tDIVISÃO [/]");
+            Console.WriteLine("***************");
+            Console.WriteLine("**CALCULADORA**");
+            Console.WriteLine("***************");
 
-                Console.WriteLine("Informe o operador Matemático");
-                calcular.Operador = char.Parse(Console.ReadLine());
+            Console.WriteLine("\n");
 
-                Console.WriteLine("Informe o primeiro número: ");
-                calcular.Num1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("ESCOLHA UM OPERADOR DA LISTA:");
+            Console.WriteLine("\tSOMA [+]");
+            Console.WriteLine("\tSUBITRAÇÃO [-]");
+            Console.WriteLine("\tMULTIPLICAÇÃO [*]");
+            Console.WriteLine("\tDIVISÃO [/]");
 
-                Console.WriteLine("Informe o segundo número: ");
-                calcular.Num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Informe o operador Matemático");
+            calcular.Operador = char.Parse(Console.ReadLine());
 
-                double result = calcularValores(calcular.Operador, calcular.Num1, calcular.Num2);
-                Console.WriteLine("Resultado: " + result);
+            Console.WriteLine("Informe o primeiro número: ");
+            calcular.Num1 = Convert.ToDouble(Console.ReadLine());
 
-            
+            Console.WriteLine("Informe o segundo número: ");
+            calcular.Num2 = Convert.ToDouble(Console.ReadLine());
+
+            double result = calcularValores(calcular.Operador, calcular.Num1, calcular.Num2);
+            Console.WriteLine("Resultado: " + result);
+
+            Console.WriteLine("Deseja continuar no sistema? [S/N]");
+
+            if (Console.ReadLine().ToUpper() == "N")
+            {
+                
+            }
         }
         public double calcularValores(char op, double num1, double num2)
         {
@@ -58,21 +65,20 @@ namespace Programa
                     {
                         case '+':
                             resultado = num1 + num2;
-                            break;
+                            return resultado;
 
                         case '-':
                             resultado = num1 - num2;
-                            break;
+                            return resultado;
 
                         case '*':
                             resultado = num1 * num2;
-                            break;
+                            return resultado;
 
                         case '/':
                             resultado = num1 / num2;
-                            break;
+                            return resultado;
                     }
-                    return resultado;
                 }
                 catch (Exception ex)
                 {
